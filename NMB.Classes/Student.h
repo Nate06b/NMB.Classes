@@ -8,7 +8,7 @@ private:
 
 	//fields (class variables)
 	std::string m_name;
-	float m_gpa = 0;
+	float m_gpa;
 	// member veribles m_
 
 public:

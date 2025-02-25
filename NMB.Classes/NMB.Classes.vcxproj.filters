@@ -14,12 +14,21 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Animals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Student.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="Animals.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dog.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cat.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
