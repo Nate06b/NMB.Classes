@@ -134,7 +134,7 @@
     <ClInclude Include="Animals.h" />
     <ClInclude Include="Cat.h" />
     <ClInclude Include="Dog.h" />
-    <ClInclude Include="Student.h" />
+    <ClInclude Include="Person.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

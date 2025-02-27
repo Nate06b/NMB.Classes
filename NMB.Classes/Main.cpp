@@ -8,7 +8,7 @@
 
 #include "Cat.h"
 #include "Dog.h"
-#include "Student.h"
+#include "Person.h"
 	
 	// animal class wutg name and age (int) fields
 	// Getters and setters
@@ -17,10 +17,16 @@
 
 int main()
 {
-	//Student sam;
-	//sam.SetName("Sam");
-	//sam.SetGPA(3.8);
-	//sam.Print();
+	// heap (heap means new)
+	Animals* pA = new Animals;
+	pA->SetName("Lucy");
+
+
+	// these are all on the stack
+	Person sam;
+	sam.SetName("Sam");
+	sam.SetAge(18);
+	sam.Print();
 
 	/*
 	Four Pillars 
@@ -32,15 +38,19 @@ int main()
 	
 	*/
 
-
-	Animals fluffy;
-	fluffy.SetName("fluffy");
-	fluffy.SetAge(5);
+	// because we have a constructor make all at the same time
+	Animals fluffy("Fluffy", 5);
+	//fluffy.SetName("fluffy");
+	//fluffy.SetAge(5);
 	fluffy.Print();
 
+	sam.SetPet(&fluffy);
+	
+	{
 	Dog daisy;
 	daisy.SetName("Daisy");
 	daisy.DigHole();
+	}
 
 	Cat luke;
 	luke.SetName("Luke");
@@ -51,7 +61,7 @@ int main()
 		// this is a vector if pointers to Animals
 	std::vector<Animals*> animal;
 	animal.push_back(&fluffy);
-	animal.push_back(&daisy);
+	//animal.push_back(&daisy);
 	animal.push_back(&luke);
 	animal.push_back(&Leia);
 		// a constent pointer to animals

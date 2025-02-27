@@ -19,7 +19,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Student.h">
+    <ClInclude Include="Person.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="Animals.h">
