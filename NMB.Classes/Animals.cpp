@@ -2,6 +2,12 @@
 #include "Animals.h"
 #include "Person.h"
 
+int Animals::s_count = 0;
+
+void Animals::PrintCount()
+{
+	std::cout << "There are " << s_count << " animals.\n";
+}
 
 void Animals::Print() const 
 {

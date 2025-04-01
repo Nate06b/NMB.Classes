@@ -22,4 +22,9 @@ public:
 		Animals::Print();
 	}
 
+	virtual void Move()
+	{
+		std::cout << GetName() << " is running.\n";
+	}
+
 };

@@ -17,4 +17,10 @@ public:
 		std::cout << "Cat: ";
 		Animals::Print();
 	}
+
+	virtual void Move()
+	{
+		std::cout << GetName() << " is pouncing.\n";
+	}
+
 };
